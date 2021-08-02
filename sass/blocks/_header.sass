@@ -3,8 +3,8 @@
     min-height: 70px
 .nav
   display: flex
-  justify-content: space-between
   align-items: center
+  justify-content: space-between
   &-menu
     flex: 0 1 762 / 1120 * 100%
     display: flex
@@ -12,14 +12,32 @@
     justify-content: space-between
     flex-wrap: wrap
     &__list
-      max-width: 406px
+      max-width: 436px
       width: 100%
+      margin-left: auto
+      margin-right: 30px
       display: flex
       align-items: center
       justify-content: space-between
       flex-wrap: wrap
     &__link
       color: rgba(31, 32, 65, 0.5)
+    &__item:not(:last-child)
+      margin-right: 20px
+    &__item
+      &-arrow
+        display: flex
+        align-items: flex-start
+        justify-content: center
+        &::after
+          content: ''
+          margin: 2px 0 0 15px
+          border: solid rgba(31, 32, 65, 0.5)
+          border-width: 0 2px 2px 0
+          display: inline-block
+          padding: 3px
+          transform: rotate(45deg)
+
   &-login
     &__list
       max-width: 304px
@@ -27,15 +45,31 @@
       display: flex
       justify-content: space-between
       align-items: center
-.item
-  &__arrow
+.menu
+  &-user
+    max-width: 303px
+    width: 100%
     display: flex
+    justify-content: space-between
     align-items: center
-    justify-content: center
-    &::after
-      content: ''
-      border: solid rgba(31, 32, 65, 0.5)
-      border-width: 0 3px 3px 0
-      display: inline-block
-      padding: 3px
-      transform: rotate(45deg)
+.user
+  &__login
+    display: inline-block
+    padding: 10px 20px
+    font-weight: bold
+    font-size: 12px
+    line-height: 15 / 12 * 100%
+    text-transform: uppercase
+    color: $primaryColor
+    border-radius: 22px
+    border: 2px solid $primaryColor
+  &__signup
+    display: inline-block
+    padding: 10px 20px
+    background: linear-gradient(180deg, $primaryColor 0%, #8BA4F9 100%)
+    border-radius: 22px
+    font-weight: bold
+    font-size: 12px
+    line-height: 15 / 12 * 100%
+    text-transform: uppercase
+    color: #FFFFFF
