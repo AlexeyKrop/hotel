@@ -55,8 +55,11 @@
         </div>
       </div>
     </header>
+    <!-- END HEADER -->
+
     <!-- MAIN -->
     <main class="main">
+      <!-- SLIDER -->
       <section class="slider">
         <div class="slider-wrapper">
           <ul class="slider__list">
@@ -72,6 +75,9 @@
           </ul>
         </div>
       </section>
+      <!-- END SLIDER -->
+
+      <!-- POPUP -->
       <section class="popup">
         <div class="popup-wrapper">
           <div class="popup-content">
@@ -79,49 +85,54 @@
               Найдём номера под ваши пожелания
             </h2>
             <form action="#" class="popup-form form" method="post">
-              <label class="form__description-arrival" for="arrival"
-                >прибытие</label
-              >
-              <input
-                type="text"
-                class="datepicker-here form__arrival"
-                data-position="bottom left"
-                id="arrival"
-                placeholder="ДД.ММ.ГГГГ"
-              />
-              <label class="form__description-departure" for="departure"
-                >выезд</label
-              >
-              <input
-                type="text"
-                class="datepicker-here form__departure"
-                data-position="bottom left"
-                placeholder="ДД.ММ.ГГГГ"
-              />
-              <label class="form__guest" for="guest">гости</label>
-              <select
-                placeholder="dsf"
-                name="guest"
-                id="guest"
-                class="form__guest"
-              >
-                <option value="0" selected>Сколько гостей</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-              </select>
+              <div class="form__selection">
+                <div class="form__description-arrival">
+                  <label for="arrival">прибытие</label>
+                  <input
+                    type="text"
+                    class="datepicker-here form__arrival"
+                    data-position="bottom left"
+                    id="arrival"
+                    placeholder="ДД.ММ.ГГГГ"
+                  />
+                </div>
+                <div class="form__description-departure">
+                  <label for="departure">выезд</label>
+                  <input
+                    type="text"
+                    class="datepicker-here form__departure"
+                    data-position="bottom left"
+                    placeholder="ДД.ММ.ГГГГ"
+                  />
+                </div>
+              </div>
+              <div class="form__guest">
+                <label class="form__guest-text" for="guest">гости</label>
+                <select
+                  placeholder="dsf"
+                  name="guest"
+                  id="guest"
+                  class="form__guest"
+                >
+                  <option value="0" selected>Сколько гостей</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
               <a href="/" class="form__find">подобрать номер</a>
             </form>
           </div>
         </div>
       </section>
+      <!-- END POPUP -->
     </main>
   </body>
 </html>
