@@ -6,6 +6,17 @@
     <meta keywords="hotel, find" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="./air-datepicker-master/dist/css/datepicker.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./air-datepicker-master/dist/js/datepicker.min.js"></script>
     <title>hotel</title>
   </head>
   <body>
@@ -44,5 +55,73 @@
         </div>
       </div>
     </header>
+    <!-- MAIN -->
+    <main class="main">
+      <section class="slider">
+        <div class="slider-wrapper">
+          <ul class="slider__list">
+            <li class="slider__item slider__item-active">
+              <img src="./image/slider-1.png" alt="room" />
+            </li>
+            <li class="slider__item">
+              <img src="./image/slider-2.png" alt="room" />
+            </li>
+            <li class="slider__item">
+              <img src="./image/slider-3.png" alt="room" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="popup">
+        <div class="popup-wrapper">
+          <div class="popup-content">
+            <h2 class="popup-content__title">
+              Найдём номера под ваши пожелания
+            </h2>
+            <form action="#" class="popup-form form" method="post">
+              <label class="form__description-arrival" for="arrival"
+                >прибытие</label
+              >
+              <input
+                type="text"
+                class="datepicker-here form__arrival"
+                data-position="bottom left"
+                id="arrival"
+                placeholder="ДД.ММ.ГГГГ"
+              />
+              <label class="form__description-departure" for="departure"
+                >выезд</label
+              >
+              <input
+                type="text"
+                class="datepicker-here form__departure"
+                data-position="bottom left"
+                placeholder="ДД.ММ.ГГГГ"
+              />
+              <label class="form__guest" for="guest">гости</label>
+              <select
+                placeholder="dsf"
+                name="guest"
+                id="guest"
+                class="form__guest"
+              >
+                <option value="0" selected>Сколько гостей</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <a href="/" class="form__find">подобрать номер</a>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
