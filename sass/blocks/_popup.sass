@@ -1,4 +1,8 @@
 .popup
+  position: absolute
+  top: 140px
+  left: 140px
+  z-index: 2
   max-width: 380px
   width: 100%
   min-height: 374px
@@ -10,13 +14,87 @@
   &-content
     padding: 40px 30px 30px 30px
     &__title
-      margin-bottom: 21px
       max-width: 320px
       width: 100%
-      margin: 0
+      margin: 0 0 21px 0
       padding: 0
       font-weight: bold
       font-size: 25px
       line-height: 29 / 25 * 100%
       letter-spacing: 1.2px
       color: $popupColorHeading
+.form
+  &__selection
+    max-width: 320px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__arrial
+    max-width: 150px
+    width: 100%
+  &__guest
+    max-width: 320px
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    &-text
+      font-size: 12px
+    &-select
+      appearance: none
+      max-width: 320px
+      width: 100%
+      padding: 13px
+      background: url(../icon/arrow-down.svg)
+      background-repeat: no-repeat
+      background-position: 284px 17px
+      line-height: 18 / 14 * 100%
+      border: 1px solid rgba(31, 32, 65, 0.25)
+      border-radius: 4px
+      outline: none
+      color: rgba(31, 32, 65, 0.75)
+      cursor: pointer
+  &__find
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    margin-top: 30px
+    max-width: 320px
+    width: 100%
+    min-height: 44px
+    background: linear-gradient(180deg, $primaryColor 0%, #8BA4F9 100%)
+    border-radius: 22px
+    font-weight: bold
+    font-size: 12px
+    line-height: 15 / 12 * 100%
+    text-transform: uppercase
+    color: #FFFFFF
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      right: -15px
+      top: 30%
+      width: 44px
+      height: 44px
+      background-image: url('../icon/arrow_right.svg')
+      background-repeat: no-repeat
+.popup
+  &-form
+    label
+      display: inline-block
+      margin-bottom: 5px
+      font-weight: bold
+      line-height: 15 / 12 * 100%
+      text-transform: uppercase
+      color: $popupColorHeading
+.datepicker-here
+  margin-bottom: 20px
+  outline: none
+  border: 1px solid rgba(31, 32, 65, 0.25)
+  border-radius: 4px
+  max-width: 150px
+  width: 100%
+  padding: 11px 32px 16px 15px
+  color: rgba(31, 32, 65, 0.75)
