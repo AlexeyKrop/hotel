@@ -537,21 +537,28 @@ template {
 
 .slider__item {
   position: absolute;
+  width: 100%;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 2;
-  top: 0;
   opacity: 0;
 }
 
 .slider__item-active {
   opacity: 1;
+  z-index: 3;
+}
+
+.slider__item img {
+  width: 100%;
 }
 
 .popup {
   position: absolute;
   top: 140px;
   left: 140px;
-  z-index: 2;
+  z-index: 4;
   max-width: 380px;
   width: 100%;
   min-height: 374px;
