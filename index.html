@@ -107,21 +107,77 @@
                   />
                 </div>
               </div>
-              <div class="form__guest">
-                <label class="form__guest-text" for="guest">гости</label>
-                <select class="form__guest-select" name="guest" id="guest">
-                  <option value="0" selected>Сколько гостей</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                </select>
+              <div class="form-guest">
+                <p class="form-guest__heading">гости</p>
+                <ul class="form-guest__menu">
+                  <li class="form-guest__item-main">
+                    <span class="form-guest__count">Сколько гостей</span>
+                  </li>
+                  <li class="form-guest__item">
+                    <ul class="form-guest__submenu">
+                      <li class="form-guest__subitem">
+                        <div class="form-guest__description">
+                          <p class="form-guest__gender">взрослые</p>
+                          <div class="form-guest__btn">
+                            <button
+                              class="
+                                form-guest__button form-guest__button-minus
+                              "
+                            >
+                              -
+                            </button>
+                            <span class="form-guest__amount">1</span>
+                            <button
+                              class="form-guest__button form-guest__button-plus"
+                            >
+                              +
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="form-guest__subitem">
+                        <div class="form-guest__description">
+                          <p class="form-guest__gender">дети</p>
+                          <div class="form-guest__btn">
+                            <button
+                              class="
+                                form-guest__button form-guest__button-minus
+                              "
+                            >
+                              -
+                            </button>
+                            <span class="form-guest__amount">1</span>
+                            <button
+                              class="form-guest__button form-guest__button-plus"
+                            >
+                              +
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="form-guest__subitem">
+                        <div class="form-guest__description">
+                          <p class="form-guest__gender">младенцы</p>
+                          <div class="form-guest__btn">
+                            <button
+                              class="
+                                form-guest__button form-guest__button-minus
+                              "
+                            >
+                              -
+                            </button>
+                            <span class="form-guest__amount">1</span>
+                            <button
+                              class="form-guest__button form-guest__button-plus"
+                            >
+                              +
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
               <a href="/" class="form__find">подобрать номер</a>
             </form>
@@ -130,5 +186,11 @@
       </section>
       <!-- END POPUP -->
     </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container"></div>
+    </footer>
+    <!-- END FOOTER -->
   </body>
 </html>

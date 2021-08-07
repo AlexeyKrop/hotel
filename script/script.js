@@ -1,6 +1,5 @@
 "use strict";
 // Slider
-
 const slider = () => {
   const sliderItem = document.querySelectorAll(".slider__item");
   let currenSlider = 1;
@@ -18,3 +17,13 @@ const slider = () => {
   setInterval(moveSlider, 2000);
 };
 slider();
+
+// open subMenu
+const openSubMenu = () => {
+  const formGuestItemMain = document.querySelector(".form-guest__item-main"),
+    formGuestItem = document.querySelector(".form-guest__item");
+  formGuestItemMain.addEventListener("click", () => {
+    formGuestItem.classList.toggle("form-guest__item-active");
+  });
+};
+openSubMenu();

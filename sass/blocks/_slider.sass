@@ -7,6 +7,7 @@
     top: 0
     left: 0
     right: 0
+    bottom: 0
     z-index: 2
     opacity: 0
     &-active
@@ -14,3 +15,16 @@
       z-index: 3
     img
       width: 100%
+      min-height: vh
+      height: 100vh
+      object-fit: cover
+  &__text
+    position: absolute
+    max-width: 297px
+    width: 100%
+    z-index: 3
+    bottom: -28px
+    right: 134px
+    line-height: 24px
+    text-align: right
+    color: rgba(31, 32, 65, 0.75)
