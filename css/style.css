@@ -780,7 +780,7 @@ template {
 }
 
 .form-guest__description {
-  padding: 15px;
+  padding: 5px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -815,6 +815,7 @@ template {
 }
 
 .form-guest__gender {
+  margin: 0;
   font-weight: bold;
   font-size: 12px;
   line-height: 125%;
@@ -832,5 +833,24 @@ template {
   line-height: 22px;
   text-align: center;
   color: rgba(31, 32, 65, 0.5);
+}
+
+.form-guest__reset {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-guest__reset a {
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #BC9CFF;
 }
 /*# sourceMappingURL=style.css.map */

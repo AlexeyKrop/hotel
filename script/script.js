@@ -52,3 +52,19 @@ const guestCounter = () => {
   });
 };
 guestCounter();
+
+// reset popup
+const popupReset = () => {
+  const formGuestReset = document.querySelector(".form-guest__reset"),
+    formGuestAmount = document.querySelectorAll(".form-guest__amount");
+  formGuestReset.addEventListener("click", (event) => {
+    event.preventDefault();
+    const target = event.target;
+    if (target.matches(".form-guest__clean")) {
+      formGuestAmount.forEach((item) => {
+        item.textContent = 1;
+      });
+    }
+  });
+};
+popupReset();
