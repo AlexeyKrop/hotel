@@ -27,3 +27,28 @@ const openSubMenu = () => {
   });
 };
 openSubMenu();
+
+// counter guest
+const guestCounter = () => {
+  const formGuestButton = document.querySelectorAll(".form-guest__btn");
+  formGuestButton.forEach((item) => {
+    let counter = 1;
+    item.addEventListener("click", (event) => {
+      event.preventDefault();
+      const target = event.target;
+      let formGuestAmount = item.querySelector(".form-guest__amount");
+      if (target.matches(".form-guest__button-plus")) {
+        counter++;
+        formGuestAmount.textContent = counter;
+      } else if (target.matches(".form-guest__button-minus")) {
+        if (counter > 1) {
+          counter--;
+        } else {
+          counter = 1;
+        }
+        formGuestAmount.textContent = counter;
+      }
+    });
+  });
+};
+guestCounter();
